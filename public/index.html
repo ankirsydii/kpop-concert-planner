@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-Pop Concert & Travel Planner 🎶</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="chat-container">
+        <!-- Header -->
+        <div class="chat-header">
+            <div class="header-badge">✨ Live Concert Partner</div>
+            <h2>K-Pop Concert Planner 💜</h2>
+            <p>Ready to meet your bias? Let's plan it!</p>
+        </div>
+
+        <!-- Ruang Obrolan -->
+        <div class="chat-box" id="chat-box">
+            <div class="message bot-message">
+                <p>Annyeonghaseyo, Bestie! 👋 Mau war tiket konser siapa kita hari ini? Cuss pilih tombol cepat di bawah atau drop pertanyaan & seating plan-nya ya!</p>
+            </div>
+        </div>
+
+        <!-- Quick Prompts / Tombol Pintasan -->
+        <div class="quick-prompts">
+            <button class="prompt-chip" data-text="Beri aku tips & trik ampuh menang war tiket konser!">🎟️ Tips War Tiket</button>
+            <button class="prompt-chip" data-text="Bagaimana cara menghitung estimasi total budget nonton konser dari luar kota?">💰 Hitung Budget</button>
+            <button class="prompt-chip" data-text="Apa saja barang wajib dan barang dilarang yang boleh dibawa ke venue konser?">🎒 Barang Bawaan</button>
+        </div>
+
+        <!-- Form Input -->
+        <form class="chat-form" id="chat-form">
+            <label for="image-upload" class="upload-btn" title="Upload Seating Plan">
+                📷
+            </label>
+            <input type="file" id="image-upload" accept="image/*" style="display: none;">
+            
+            <input type="text" id="user-input" placeholder="Tanya soal section, budget, atau itinerary...">
+            
+            <button type="submit" id="send-btn">
+                <span>Kirim</span> 🚀
+            </button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
